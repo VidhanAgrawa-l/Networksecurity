@@ -1,3 +1,11 @@
 python-dotenv
-pandas
+pandas 
 numpy
+pymongo
+certifi
+pymongo[srv]
+
+
+
+
+##-e .    
