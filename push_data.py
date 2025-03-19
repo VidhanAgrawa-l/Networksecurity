@@ -49,7 +49,7 @@ class NetworkDataExtract():
         
 if __name__=='__main__': #it is used to run the code only when the file is run directly not when it is imported in another file
     FILE_PATH="Network_Data/phisingData.csv"
-    DATABASE="KRISHAI"
+    DATABASE="networksecuritydb"
     Collection="NetworkData"
     networkobj=NetworkDataExtract() 
     records=networkobj.csv_to_json_convertor(file_path=FILE_PATH)

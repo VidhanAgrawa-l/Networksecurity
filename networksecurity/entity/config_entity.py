@@ -6,7 +6,7 @@ print(training_pipeline.PIPELINE_NAME)
 print(training_pipeline.ARTIFACT_DIR)
 
 
-class TrainingPipelineConfig:
+class TrainingPipelineConfig: 
     def __init__(self,timestamp=datetime.now()):
         timestamp=timestamp.strftime("%m_%d_%Y_%H_%M_%S")
         self.pipeline_name=training_pipeline.PIPELINE_NAME
@@ -24,10 +24,10 @@ class DataIngestionConfig:
         )
         self.feature_store_file_path: str = os.path.join(
                 self.data_ingestion_dir, training_pipeline.DATA_INGESTION_FEATURE_STORE_DIR, training_pipeline.FILE_NAME
-            )
+            )# it will create the path of the feature store file
         self.training_file_path: str = os.path.join(
                 self.data_ingestion_dir, training_pipeline.DATA_INGESTION_INGESTED_DIR, training_pipeline.TRAIN_FILE_NAME
-            )
+            )# it will create the path of the training file
         self.testing_file_path: str = os.path.join(
                 self.data_ingestion_dir, training_pipeline.DATA_INGESTION_INGESTED_DIR, training_pipeline.TEST_FILE_NAME
             )
